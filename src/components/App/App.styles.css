@@ -1,0 +1,59 @@
+body,
+button {
+  font-family: "Raleway", sans-serif;
+}
+
+.main-wrapper {
+  padding: 30px 100px 25px 0;
+}
+
+.quotes-wrapper {
+  max-width: 614px;
+  margin: 0 auto;
+  margin-bottom: 109px;
+  position: relative;
+  padding: 140px 0 0 0;
+}
+
+.author-title {
+  font-size: 36px;
+  line-height: 42px;
+  font-weight: 700;
+  color: #333333;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.copy {
+  font-weight: 500;
+  font-size: 14px;
+  position: absolute;
+  bottom: 20px;
+  right: 50%;
+  transform: translate(50%, 0px);
+}
+
+@media screen and (max-width: 768px) {
+  .main-wrapper {
+    padding: 29px 55px 100px 115px;
+  }
+
+  .author-title {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .main-wrapper {
+    padding: 15px 25px 100px 60px;
+  }
+
+  .author-title {
+    font-size: 15px;
+  }
+
+  .quotes-wrapper {
+    padding: 100px 0 0 0;
+  }
+}

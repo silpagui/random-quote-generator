@@ -1,0 +1,48 @@
+.quote::before {
+  position: absolute;
+  left: -99px;
+  top: 0;
+  bottom: 0;
+  content: "";
+  display: block;
+  background: #f7df94;
+  width: 8px;
+}
+
+.quote {
+  position: relative;
+  font-size: 36px;
+  line-height: 43px;
+  margin-bottom: 109px;
+  font-weight: 500;
+}
+
+.quote:last-child {
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .quote {
+    font-size: 16px;
+    line-height: 23px;
+    margin-bottom: 60px;
+  }
+
+  .quote::before {
+    left: -60px;
+    width: 5px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .quote {
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 30px;
+  }
+
+  .quote::before {
+    left: -20px;
+    width: 3px;
+  }
+}

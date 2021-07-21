@@ -1,0 +1,75 @@
+.author {
+  display: block;
+  width: 100%;
+  border: none;
+  background: transparent;
+  color: #4f4f4f;
+  cursor: pointer;
+  padding: 0;
+  text-align: left;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.author-name {
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 8px;
+}
+
+.genres {
+  color: #828282;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.author::before {
+  position: absolute;
+  content: "";
+  top: -50px;
+  bottom: -49px;
+  right: -29px;
+  left: -29px;
+  display: block;
+  background: #333333;
+  opacity: 0;
+  z-index: -1;
+  transition: all 0.3s ease;
+}
+
+.author:after {
+  content: "";
+  position: absolute;
+  top: 18px;
+  right: 30px;
+  background: url(../../assets/arrow-go.svg) no-repeat;
+  width: 26px;
+  height: 22px;
+  background-size: 100% auto;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.author:hover {
+  color: #f2f2f2;
+}
+
+.author:hover:before,
+.author:hover:after {
+  opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .author-name {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .author-name {
+    font-size: 16px;
+    line-height: 18px;
+    margin-bottom: 4px;
+  }
+}

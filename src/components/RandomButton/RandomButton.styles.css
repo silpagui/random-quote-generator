@@ -1,0 +1,39 @@
+.random-button {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  border: none;
+  background: transparent;
+  color: #4f4f4f;
+  cursor: pointer;
+  margin: 0 0 0 auto;
+  margin-bottom: 48px;
+  transition: all 2s ease;
+}
+
+.random-button:hover {
+  color: rgb(22, 155, 151);
+}
+
+.random-button img {
+  transition: all 2s ease;
+  margin-left: 11px;
+}
+
+.random-button:hover img {
+  transform: rotate(360deg);
+}
+
+@media screen and (max-width: 768px) {
+  .random-button {
+    font-size: 16px;
+    line-height: 23px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .random-button {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
