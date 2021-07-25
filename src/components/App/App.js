@@ -4,13 +4,16 @@ import "./App.styles.css";
 import { RandomButton } from "../RandomButton/RandomButton.component.js";
 import { Author } from "../Author/Author.component.js";
 import { Quote } from "../Quote/Quote.component.js";
+import { Loading } from "../Loading/Loading.component";
 
 const randomQuote = "https://quote-garden.herokuapp.com/api/v3/quotes/random";
 export function App() {
   const [quote, setQuote] = useState({});
   const [listQuotes, setLisQuotes] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
 
   function handleNewQuote() {
+    setIsLoading(true);
     fetch(randomQuote)
       .then((response) => {
         return response.json();
@@ -18,22 +21,23 @@ export function App() {
       .then((data) => {
         setQuote(data.data[0]);
         setLisQuotes([]);
+        setIsLoading(false);
       });
   }
 
-  useEffect(() => {
-    handleNewQuote();
-  }, [setQuote, setLisQuotes]);
+  useEffect(handleNewQuote, [setQuote, setLisQuotes, setIsLoading]);
 
   const genreList = `https://quote-garden.herokuapp.com/api/v3/quotes?author=${quote.quoteAuthor}&page=1&limit=3&genre=${quote.quoteGenre}`;
 
   const handleGenre = () => {
+    setIsLoading(true);
     fetch(genreList)
       .then((response) => {
         return response.json();
       })
       .then((data) => {
         setLisQuotes(data.data);
+        setIsLoading(false);
       });
   };
 
@@ -48,6 +52,7 @@ export function App() {
 
   return (
     <div className="main-wrapper">
+      {isLoading && <Loading />}
       <RandomButton
         onClick={() => {
           handleNewQuote();
