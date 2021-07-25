@@ -70,7 +70,8 @@ export function App() {
         )}
       </div>
       <p className="copy">
-        created by <a href="index.html">username</a> - devChallenges.io
+        created by <a href="https://github.com/silpagui">silpagui</a> -
+        devChallenges.io
       </p>
     </div>
   );
