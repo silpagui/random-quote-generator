@@ -1,6 +1,6 @@
 {
-  "name": "random-quote-app",
-  "homepage": "https://silpagui.github.io/random-quote-app/",
+  "name": "random-quote-generator",
+  "homepage": "https://silpagui.github.io/random-quote-generator/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
