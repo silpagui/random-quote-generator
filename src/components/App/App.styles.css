@@ -28,13 +28,13 @@ button {
 }
 
 .copy {
-  position: absolute;
   font-weight: 500;
   font-size: 14px;
   position: absolute;
-  bottom: 4px;
-  right: 50%;
-  transform: translate(50%, 0px);
+  bottom: 6px;
+  left: 0;
+  right: 0;
+  text-align: center;
 }
 
 @media screen and (max-width: 768px) {
