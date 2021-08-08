@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/random-quote-generator/static/css/main.68a5b85b.chunk.css",
+    "main.css": "/random-quote-generator/static/css/main.198c091c.chunk.css",
     "main.js": "/random-quote-generator/static/js/main.463a80c6.chunk.js",
     "main.js.map": "/random-quote-generator/static/js/main.463a80c6.chunk.js.map",
     "runtime-main.js": "/random-quote-generator/static/js/runtime-main.2d12e079.js",
@@ -8,7 +8,7 @@
     "static/js/2.f0206c4f.chunk.js": "/random-quote-generator/static/js/2.f0206c4f.chunk.js",
     "static/js/2.f0206c4f.chunk.js.map": "/random-quote-generator/static/js/2.f0206c4f.chunk.js.map",
     "index.html": "/random-quote-generator/index.html",
-    "static/css/main.68a5b85b.chunk.css.map": "/random-quote-generator/static/css/main.68a5b85b.chunk.css.map",
+    "static/css/main.198c091c.chunk.css.map": "/random-quote-generator/static/css/main.198c091c.chunk.css.map",
     "static/js/2.f0206c4f.chunk.js.LICENSE.txt": "/random-quote-generator/static/js/2.f0206c4f.chunk.js.LICENSE.txt",
     "static/media/arrow-circle.67055034.svg": "/random-quote-generator/static/media/arrow-circle.67055034.svg",
     "static/media/Author.styles.css": "/random-quote-generator/static/media/arrow-go.5671b2c3.svg"
@@ -16,7 +16,7 @@
   "entrypoints": [
     "static/js/runtime-main.2d12e079.js",
     "static/js/2.f0206c4f.chunk.js",
-    "static/css/main.68a5b85b.chunk.css",
+    "static/css/main.198c091c.chunk.css",
     "static/js/main.463a80c6.chunk.js"
   ]
 }
