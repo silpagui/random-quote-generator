@@ -75,7 +75,7 @@ export function App() {
         )}
       </div>
       <p className="copy">
-        created by <a href="https://github.com/silpagui">silpagui</a> -
+        created by <a href="https://silpagui.github.io/">silpagui</a> -
         devChallenges.io
       </p>
     </div>
